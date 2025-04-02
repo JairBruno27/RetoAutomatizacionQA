@@ -1,0 +1,287 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "add-product-to-the-cart;add-product-to-cart-successfully",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Add product to cart successfully",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am logged in as a standard user",
+            "match": {
+              "location": "src\\tests\\step-definitions\\add-to-cart.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 912061500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I add multiple products to the cart",
+            "match": {
+              "location": "src\\tests\\step-definitions\\add-to-cart.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 71264400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I should see the product in the cart",
+            "match": {
+              "location": "src\\tests\\step-definitions\\add-to-cart.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2049500
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "add-product-to-the-cart",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Add product to the cart",
+    "tags": [],
+    "uri": "src\\tests\\features\\add-to-cart.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "checkout-process;complete-purchase",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Complete purchase",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I have products in my cart",
+            "match": {
+              "location": "src\\tests\\step-definitions\\checkout.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 932646600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I proceed to checkout",
+            "match": {
+              "location": "src\\tests\\step-definitions\\checkout.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18150000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I fill in the shipping details",
+            "match": {
+              "location": "src\\tests\\step-definitions\\checkout.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 45137999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I complete the purchase",
+            "match": {
+              "location": "src\\tests\\step-definitions\\checkout.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17565399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should see the order confirmation page",
+            "match": {
+              "location": "src\\tests\\step-definitions\\checkout.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1873599
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "checkout-process",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Checkout process",
+    "tags": [],
+    "uri": "src\\tests\\features\\checkout.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login;login-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Login with valid credentials",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on the Sauce Demo login page",
+            "match": {
+              "location": "src\\tests\\step-definitions\\login.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 784243200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I enter valid credentials",
+            "match": {
+              "location": "src\\tests\\step-definitions\\login.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28087100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I click on the login button",
+            "match": {
+              "location": "src\\tests\\step-definitions\\login.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 40364799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should be redirected to the products page",
+            "match": {
+              "location": "src\\tests\\step-definitions\\login.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2391799
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;login-with-invalid-credentials",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Login with invalid credentials",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I am on the Sauce Demo login page",
+            "match": {
+              "location": "src\\tests\\step-definitions\\login.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 800207900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I enter invalid credentials",
+            "match": {
+              "location": "src\\tests\\step-definitions\\login.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25134099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I click on the login button",
+            "match": {
+              "location": "src\\tests\\step-definitions\\login.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24491999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I should see an error message",
+            "match": {
+              "location": "src\\tests\\step-definitions\\login.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2116299
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login",
+    "tags": [],
+    "uri": "src\\tests\\features\\login.feature"
+  }
+]
