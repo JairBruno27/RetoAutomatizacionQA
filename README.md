@@ -33,7 +33,7 @@ Descargar el archivo .zip y extraerlo. Dentro del vscode ir a File, Open Folder 
     Y (yes), Enter, Enter, Enter, Enter (Todo por defecto).
     Esto sirve también para instalar los navegadores necesarios. En este caso utilizaremos Chrome, por este motivo este comando instalará Chromium.
 
--Instalación de Cucumber
+- Instalación de Cucumber
 
     Instalado con npm install -D @cucumber/cucumber
 
